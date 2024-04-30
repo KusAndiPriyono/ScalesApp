@@ -35,7 +35,7 @@ exports.resizeScaleImages = catchAsync(async (req, res, next) => {
   await sharp(req.file.buffer)
     .resize({ fit: 'cover' })
     .toFormat('png')
-    .jpeg({ quality: 90 })
+    .png({ quality: 90 })
     .toFile(`public/img/scales/${filename}`);
 
   next();

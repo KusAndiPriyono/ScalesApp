@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "6624c9eeec6dfcb0a06587a3",
+    "name": "Timbangan Digital",
+    "brand": "AND",
+    "kindType": "HV–15KGL",
+    "serialNumber": "M7710472",
+    "rangeCapacity": 15,
+    "unit": "kg",
+    "location": "Candy 4",
+    "status": "aktif",
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 0,
+    "parentMachineOfEquipment": "Wrapping",
+    "equipmentDescription": "Timbangan Reject",
+    "imageCover": "default.jpg",
+    "calibrationPeriod": 12,
+    "calibrationDate": "2024-01-01T00:00:00.000Z",
+    "nextCalibrationDate": "2025-01-01T00:00:00.000Z",
+    "measuringEquipmentIdNumber": "MAY/JTK/LKM/CND/07",
+    "calibrationPeriodInYears": 1,
+    "id": "6624c9eeec6dfcb0a06587a3"
+  }
+]

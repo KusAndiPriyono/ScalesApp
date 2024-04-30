@@ -29,12 +29,12 @@ exports.resizeScaleImages = catchAsync(async (req, res, next) => {
   const baseUrl = `https://scalesapp.up.railway.app/img/scales/`;
 
   // Cover image
-  const filename = `scale-${req.params.id}-${Date.now()}-cover.jpeg`;
+  const filename = `scale-${req.params.id}-${Date.now()}-cover.png`;
   req.body.imageCover = baseUrl + filename;
 
   await sharp(req.file.buffer)
     .resize({ fit: 'cover' })
-    .toFormat('jpeg')
+    .toFormat('png')
     .jpeg({ quality: 90 })
     .toFile(`public/img/scales/${filename}`);
 

@@ -36,7 +36,7 @@ const scaleSchema = new mongoose.Schema(
     unit: {
       type: String,
       enum: {
-        values: ['kg', 'g'],
+        values: ['kg', 'g', '°C/%', '°C', 'Bar', 'Mpa'],
         message: 'Unit timbangan harus kg atau g',
       },
       required: [true, 'Timbangan harus memiliki unit'],

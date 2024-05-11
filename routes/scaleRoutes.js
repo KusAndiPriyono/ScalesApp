@@ -35,6 +35,8 @@ router
   .post(
     authController.protect,
     authController.restrictTo('admin'),
+    scaleController.uploadScaleImages,
+    scaleController.resizeScaleImages,
     scaleController.createScale,
   );
 

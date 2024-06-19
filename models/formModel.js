@@ -35,6 +35,30 @@ const formSchema = new mongoose.Schema(
       type: Number,
       required: [true, 'Form harus memiliki suhu'],
     },
+    readingCenter: {
+      type: Number,
+      required: [true, 'Form harus memiliki pembacaan tengah'],
+    },
+    readingFront: {
+      type: Number,
+      required: [true, 'Form harus memiliki pembacaan depan'],
+    },
+    readingBack: {
+      type: Number,
+      required: [true, 'Form harus memiliki pembacaan belakang'],
+    },
+    readingLeft: {
+      type: Number,
+      required: [true, 'Form harus memiliki pembacaan kiri'],
+    },
+    readingRight: {
+      type: Number,
+      required: [true, 'Form harus memiliki pembacaan kanan'],
+    },
+    maxTotalReading: {
+      type: Number,
+      required: [true, 'Form harus memiliki pembacaan total maksimum'],
+    },
     resultCalibration: {
       type: String,
       required: [true, 'Form harus memiliki hasil'],

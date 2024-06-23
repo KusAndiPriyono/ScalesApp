@@ -85,7 +85,7 @@ const formSchema = new mongoose.Schema(
 
 formSchema.pre(/^find/, function (next) {
   this.populate({
-    path: 'user',
+    path: 'scale',
   });
   next();
 });

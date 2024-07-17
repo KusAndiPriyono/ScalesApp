@@ -44,3 +44,26 @@ exports.approveForm = catchAsync(async (req, res, next) => {
     form,
   });
 });
+
+exports.unreleaseForm = catchAsync(async (req, res, next) => {
+  const form = await Form.findByIdAndUpdate(
+    req.params.id,
+    {
+      approval: 'waiting',
+    },
+    {
+      new: true,
+      runValidators: true,
+    },
+  );
+  if (!form) {
+    return next(
+      new AppError('Tidak dapat menemukan formulir dengan ID tersebut!', 404),
+    );
+  }
+
+  res.status(200).json({
+    status: 'success',
+    form,
+  });
+});

@@ -25,4 +25,8 @@ router
   .route('/:id/approve')
   .patch(authController.restrictTo('manager'), formController.approveForm);
 
+router
+  .route('/:id/unrelease')
+  .patch(authController.restrictTo('manager'), formController.unreleaseForm);
+
 module.exports = router;
